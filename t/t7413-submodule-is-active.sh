@@ -6,6 +6,7 @@ This test verifies that `git submodue--helper is-active` correctly identifies
 submodules which are "active" and interesting to the user.
 '
 
+TEST_PASSES_SANITIZE_LEAK=true
 . ./test-lib.sh
 
 test_expect_success 'setup' '
