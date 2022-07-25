@@ -59,7 +59,8 @@ jobs:
     - name: Build
       run: |
         sudo apt-get install gettext
-        make
+        cat /proc/cpuinfo
+        make -j2
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
