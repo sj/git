@@ -58,7 +58,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Build
       run: |
-        sudo apt-get install gettext
+        sudo ci/install-dependencies.sh
         cat /proc/cpuinfo
         make -j2
 
