@@ -58,7 +58,7 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Build
       run: |
-        sudo ci/install-dependencies.sh
+        sudo apt-get install make libssl-dev libcurl4-openssl-dev libexpat-dev tcl tk gettext zlib1g-dev perl-modules liberror-perl libauthen-sasl-perl  libemail-valid-perl libio-socket-ssl-perl libnet-smtp-ssl-perl        
         cat /proc/cpuinfo
         make -j2
 
